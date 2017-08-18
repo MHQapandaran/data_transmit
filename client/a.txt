@@ -1,0 +1,5 @@
+this file created in client1
+When issuing a blocking Winsock call such as recv, Winsock may need to wait for a network event before the call can complete. Winsock performs an alertable wait in this situation, which can be interrupted by an asynchronous procedure call (APC) scheduled on the same thread. Issuing another blocking Winsock call inside an APC that interrupted an ongoing blocking Winsock call on the same thread will lead to undefined behavior, and must never be attempted by Winsock clients.
+For more information, and another example of the recv function, see Getting Started With Winsock.
+Windows Phone 8: This function is supported for Windows Phone Store apps on Windows Phone 8 and later.
+Windows 8.1 and Windows Server 2012 R2: This function is supported for Windows Store apps on Windows 8.1, Windows Server 2012 R2, and later.
